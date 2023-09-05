@@ -12,15 +12,7 @@ carbon_coords = [atom.position for atom in graphene if atom.symbol == 'C']
 distances = pdist(carbon_coords)
 square_distances = squareform(distances)
 
-# round the distances to 2 decimal places
+# Round the distances to 2 decimal places
 square_distances = np.round(square_distances, 0)
 
-# Get unique distances
-unique_distances = np.unique(square_distances[square_distances > 0])
-print(unique_distances)
-import random
-
-np.random.seed(0)  # for reproducibility
-random_indices = np.random.choice(len(unique_distances), 13, replace=False)
-random_distances = unique_distances[random_indices]
-print(random_distances)
+print(square_distances)
