@@ -3,7 +3,7 @@ import numpy as np
 from scipy.spatial.distance import pdist, squareform
 
 # Read the graphene structure
-graphene = read('graphene.pdb')
+graphene = read('graphene_structure/Graphene.pdb')
 
 # Extract the coordinates of carbon atoms
 carbon_coords = [atom.position for atom in graphene if atom.symbol == 'C']
