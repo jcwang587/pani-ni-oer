@@ -55,6 +55,8 @@ normalized_perpendicular = perpendicular_direction / np.linalg.norm(perpendicula
 
 # Set the desired distance between the carbon atom and the attached oxygen atom
 CO_distance = 1.43  # typical C-O single bond length in angstroms
+C_O_distance = 1.20  # typical C=O double bond length in angstroms
+OH_distance = 0.97  # typical O-H bond length in angstroms
 
 for site in select_sites:
     # Read the graphene structure
@@ -67,14 +69,17 @@ for site in select_sites:
 
     # Determine the positions for the oxygen atoms
     oxygen_position_i = carbon_coords[i_index] + normalized_perpendicular * CO_distance
-    oxygen_position_j = carbon_coords[j_index] - normalized_perpendicular * CO_distance
+    oxygen_position_j = carbon_coords[j_index] - normalized_perpendicular * C_O_distance
+    hydrogen_position_i = oxygen_position_i + normalized_perpendicular * OH_distance
 
     # Create and add the oxygen atoms to the structure
     oxygen_atom_i = Atoms('O', positions=[oxygen_position_i])
     oxygen_atom_j = Atoms('O', positions=[oxygen_position_j])
+    hydrogen_atom_i = Atoms('H', positions=[hydrogen_position_i])
 
     graphene.extend(oxygen_atom_i)
     graphene.extend(oxygen_atom_j)
+    graphene.extend(hydrogen_atom_i)
 
     # Write the structure to a gjf file
     filename = 'graphene_structure/graphene_{}_{}_{}.gjf'.format(round_distance, i_index, j_index)
