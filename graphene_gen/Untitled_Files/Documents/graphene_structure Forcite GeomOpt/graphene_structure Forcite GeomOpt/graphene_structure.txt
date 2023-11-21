@@ -1,0 +1,98 @@
+Forcite
+-------
+Task             : Geometry Optimization
+Version          : 2020
+Build date       : Oct 18 2019
+Host             : montague
+Threads          : Parallel 12
+Operating system : Windows
+Task started     : Tue Nov 21 03:12:53 2023
+
+---- Geometry optimization parameters ----
+
+Algorithm                       : Smart
+Convergence tolerance:
+  Energy                        : 0.0001 kcal/mol
+  Force                         : 0.005 kcal/mol/A
+  Stress                        : 0.005 GPa
+  Displacement                  : 5e-005 A
+Maximum number of iterations    : 500
+External pressure               : 0 GPa
+Motion groups rigid             : NO
+Optimize cell                   : NO
+
+---- Energy parameters ----
+
+Forcefield                      : Universal
+Charges                         : Use current
+Electrostatic terms:
+  Summation method              : Ewald
+  Accuracy                      : 0.0001 kcal/mol
+  Buffer width                  : 0.5 A
+
+van der Waals terms:
+  Summation method              : Atom based
+  Truncation method             : Cubic spline
+  Cutoff distance               : 15.5 A
+  Spline width                  : 1 A
+  Long range correction         : YES
+  Buffer width                  : 0.5 A
+
+
+---- Initial structure ----
+
+Total enthalpy                  : 3503.248525 kcal/mol
+  External pressure term        : 0.000000 kcal/mol
+
+Total energy                    :        3503.248525 kcal/mol
+
+Contributions to total energy (kcal/mol):
+  Valence energy (diag. terms)  :        3158.396
+    Bond                        :         780.092
+    Angle                       :        2277.461
+    Torsion                     :          95.964
+    Inversion                   :           4.879
+  Non-bond energy               :         344.852
+    van der Waals               :         345.835
+    Long range correction       :          -0.983
+    Electrostatic               :           0.000
+ 
+rms force  :  9.353E+01 kcal/mol/A     
+max force  :  4.658E+02 kcal/mol/A
+       
+Cell parameters:    a:  17.220000 A    b:  17.220000 A    c:  15.000000 A   
+                alpha:  90.000 deg  beta:  90.000 deg gamma: 120.000 deg
+WARNING No progress. Optimization with current method stopped.
+
+---- Final structure ----
+
+Total enthalpy                  : 2404.117682 kcal/mol
+  External pressure term        : 0.000000 kcal/mol
+
+Total energy                    :        2404.117682 kcal/mol
+
+Contributions to total energy (kcal/mol):
+  Valence energy (diag. terms)  :        2120.858
+    Bond                        :         207.803
+    Angle                       :        1756.093
+    Torsion                     :         146.815
+    Inversion                   :          10.147
+  Non-bond energy               :         283.260
+    van der Waals               :         284.242
+    Long range correction       :          -0.983
+    Electrostatic               :           0.000
+ 
+rms force  :  2.755E+00 kcal/mol/A     
+max force  :  1.462E+01 kcal/mol/A
+       
+Cell parameters:    a:  17.220000 A    b:  17.220000 A    c:  15.000000 A   
+                alpha:  90.000 deg  beta:  90.000 deg gamma: 120.000 deg
+
+WARNING Convergence criteria are not satisfied. 
+ 
+
+
+Task terminated               : Tue Nov 21 03:12:54 2023
+Total CPU time used by Forcite: 0 seconds (0.39s)
+
+Termination status : Normal

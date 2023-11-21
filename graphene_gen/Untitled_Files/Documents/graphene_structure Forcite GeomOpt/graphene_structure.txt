@@ -1,0 +1,92 @@
+Forcite
+-------
+Task             : Geometry Optimization
+Version          : 2020
+Build date       : Oct 18 2019
+Host             : montague
+Threads          : Scalar
+Operating system : Windows
+Task started     : Tue Nov 21 03:09:32 2023
+
+---- Geometry optimization parameters ----
+
+Algorithm                       : Smart
+Convergence tolerance:
+  Energy                        : 0.002 kcal/mol
+Maximum number of iterations    : 500
+External pressure               : 0 GPa
+Motion groups rigid             : NO
+Optimize cell                   : NO
+
+---- Energy parameters ----
+
+Forcefield                      : Universal
+Charges                         : Use current
+Electrostatic terms:
+  Summation method              : Ewald
+  Accuracy                      : 0.01 kcal/mol
+  Buffer width                  : 0.5 A
+
+van der Waals terms:
+  Summation method              : Atom based
+  Truncation method             : Cubic spline
+  Cutoff distance               : 9.5 A
+  Spline width                  : 1 A
+  Long range correction         : YES
+  Buffer width                  : 0.5 A
+
+
+---- Initial structure ----
+
+Total enthalpy                  : 776.510674 kcal/mol
+  External pressure term        : 0.000000 kcal/mol
+
+Total energy                    :         776.510674 kcal/mol
+
+Contributions to total energy (kcal/mol):
+  Valence energy (diag. terms)  :         337.571
+    Bond                        :         195.774
+    Angle                       :         141.666
+    Torsion                     :           0.122
+    Inversion                   :           0.009
+  Non-bond energy               :         438.940
+    van der Waals               :         443.205
+    Long range correction       :          -4.265
+    Electrostatic               :           0.000
+ 
+rms force  :  5.126E+01 kcal/mol/A     
+max force  :  4.098E+02 kcal/mol/A
+       
+Cell parameters:    a:  17.220000 A    b:  17.220000 A    c:  15.000000 A   
+                alpha:  90.000 deg  beta:  90.000 deg gamma: 120.000 deg
+
+---- Final structure ----
+
+Total enthalpy                  : 404.937562 kcal/mol
+  External pressure term        : 0.000000 kcal/mol
+
+Total energy                    :         404.937562 kcal/mol
+
+Contributions to total energy (kcal/mol):
+  Valence energy (diag. terms)  :         110.790
+    Bond                        :          85.863
+    Angle                       :           5.217
+    Torsion                     :          19.561
+    Inversion                   :           0.149
+  Non-bond energy               :         294.148
+    van der Waals               :         298.412
+    Long range correction       :          -4.265
+    Electrostatic               :           0.000
+ 
+rms force  :  6.257E-02 kcal/mol/A     
+max force  :  6.067E-01 kcal/mol/A
+       
+Cell parameters:    a:  17.220000 A    b:  17.220000 A    c:  15.000000 A   
+                alpha:  90.000 deg  beta:  90.000 deg gamma: 120.000 deg
+
+
+
+Task terminated               : Tue Nov 21 03:09:34 2023
+Total CPU time used by Forcite: 0 seconds (0.41s)
+
+Termination status : Normal
