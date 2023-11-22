@@ -1,6 +1,6 @@
-from pymatgen.core import Structure
+from ase.io import read, write
 
-struct = Structure.from_file('CONTCAR2.cif')
-
-# export the structure to a POSCAR file
-struct.to(filename='POSCAR', fmt='poscar')
+# Read the cif file
+struct = read('POSCAR', format='vasp')
+# Write the structure to a POSCAR file
+struct.write('POSCAR2', format='vasp')
