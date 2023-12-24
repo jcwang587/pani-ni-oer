@@ -5,27 +5,24 @@ def electrochem_potential(reactant, product):
     return (product - reactant) * ev2kjmol * kjmol2v - rhe
 
 
+# D
 e1_ni4oh3 = -930.43487
 e2_ni4oh3_oh = -940.47034
 e3_ni4oh3_o = -936.83637
 e4_ni4oh2_o_o = -931.65616
 e5_ni4oh3_o2 = -940.14993
-e91_oh = -7.7237239
+e91_oh = -7.0798351
 e92_h2o = -14.219993
 e93_o2 = -9.8524571
-e94_h = -1.1158191
-e95_h2 = -6.7591649
 
 c1_ni4oh3 = 15.364773
 c2_ni4oh3_oh = 15.684409
 c3_ni4oh3_o = 15.401384
 c4_ni4oh2_o_o = 15.202361
 c5_ni4oh3_o2 = 15.461829
-c91_oh = -0.239034
+c91_oh = -0.220582
 c92_h2o = 0.085111
-c93_o2 = -0.437734
-c94_h = -0.289911
-c95_h2 = -0.047374
+c93_o2 = -0.448151
 
 ev2kjmol = 96.485
 kjmol2v = 1000 / 96485.33289
@@ -37,10 +34,8 @@ g3_ni4oh3_o = e3_ni4oh3_o + c3_ni4oh3_o
 g4_ni4oh2_o_o = e4_ni4oh2_o_o + c4_ni4oh2_o_o
 g5_ni4oh3_o2 = e5_ni4oh3_o2 + c5_ni4oh3_o2
 g91_oh = e91_oh + c91_oh
-g92_h2o = e92_h2o + c92_h2o + (-430.1448) / ev2kjmol
-g93_o2 = e93_o2 + c93_o2 + (-18.53) / ev2kjmol
-g94_h = e94_h + c94_h
-g95_h2 = e95_h2 + c95_h2
+g92_h2o = e92_h2o + c92_h2o
+g93_o2 = e93_o2 + c93_o2
 
 step1_reactant = g1_ni4oh3 + g91_oh
 step1_product = g2_ni4oh3_oh
