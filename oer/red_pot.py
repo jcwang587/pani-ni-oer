@@ -48,20 +48,20 @@ step1_potential = electrochem_potential(step1_reactant, step1_product)
 
 step2_reactant = g2_ni4oh3_oh + g91_oh
 step2_product = g3_ni4oh3_o + g92_h2o
-step2_potential = electrochem_potential(step2_reactant, step2_product) + step1_potential
+step2_potential = electrochem_potential(step2_reactant, step2_product)
 
 step3_reactant = g3_ni4oh3_o + g91_oh
 step3_product = g4_ni4oh2_o_o + g92_h2o
-step3_potential = electrochem_potential(step3_reactant, step3_product) + step2_potential
+step3_potential = electrochem_potential(step3_reactant, step3_product)
 
 step4_reactant = g4_ni4oh2_o_o + g91_oh
 step4_product = g5_ni4oh3_o2
-step4_potential = electrochem_potential(step4_reactant, step4_product) + step3_potential
+step4_potential = electrochem_potential(step4_reactant, step4_product)
 
 step5_reactant = g5_ni4oh3_o2
 step5_product = g1_ni4oh3 + g93_o2
-step5_potential = electrochem_potential(step5_reactant, step5_product) + step4_potential
+step5_potential = electrochem_potential(step5_reactant, step5_product)
 
 step5p_reactant = g5_ni4oh3_o2 + g91_oh
 step5p_product = g2_ni4oh3_oh + g93_o2
-step5p_potential = electrochem_potential(step5p_reactant, step5p_product) + step4_potential
+step5p_potential = electrochem_potential(step5p_reactant, step5p_product)
