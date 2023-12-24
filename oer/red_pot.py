@@ -5,7 +5,7 @@ def electrochem_potential(reactant, product):
     return (product - reactant) * ev2kjmol * kjmol2v - rhe
 
 
-# D
+# E0
 e1_ni4oh3 = -930.43487
 e2_ni4oh3_oh = -940.47034
 e3_ni4oh3_o = -936.83637
@@ -15,6 +15,7 @@ e91_oh = -7.0798351
 e92_h2o = -14.219993
 e93_o2 = -9.8524571
 
+# Correction
 c1_ni4oh3 = 15.364773
 c2_ni4oh3_oh = 15.684409
 c3_ni4oh3_o = 15.401384
@@ -28,6 +29,7 @@ ev2kjmol = 96.485
 kjmol2v = 1000 / 96485.33289
 rhe = 3.43
 
+# Free energy
 g1_ni4oh3 = e1_ni4oh3 + c1_ni4oh3
 g2_ni4oh3_oh = e2_ni4oh3_oh + c2_ni4oh3_oh
 g3_ni4oh3_o = e3_ni4oh3_o + c3_ni4oh3_o
