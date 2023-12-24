@@ -65,3 +65,10 @@ step5_potential = electrochem_potential(step5_reactant, step5_product)
 step5p_reactant = g5_ni4oh3_o2 + g91_oh
 step5p_product = g2_ni4oh3_oh + g93_o2
 step5p_potential = electrochem_potential(step5p_reactant, step5p_product)
+
+print("redox potential of step 1: ", step1_potential, "V")
+print("redox potential of step 2: ", step2_potential, "V")
+print("redox potential of step 3: ", step3_potential, "V")
+print("redox potential of step 4: ", step4_potential, "V")
+print("redox potential of step 5: ", step5_potential, "V")
+print("redox potential of step 5': ", step5p_potential, "V")
