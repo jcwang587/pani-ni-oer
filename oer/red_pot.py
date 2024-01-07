@@ -2,7 +2,7 @@ import numpy as np
 
 
 def electrochem_potential(reactant, product):
-    return (product - reactant) * ev2kjmol * kjmol2v
+    return (product - reactant) * ev2kjmol * kjmol2v - 0.0591 * 14
 
 
 # Free energy
@@ -17,7 +17,6 @@ g93_o2 = -9.93605306
 
 ev2kjmol = 96.485
 kjmol2v = 1000 / 96485.33289
-rhe = 3.43
 
 step1_reactant = g1_ni4oh3 + g91_oh
 step1_product = g2_ni4oh3_oh
