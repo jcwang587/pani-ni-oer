@@ -7,13 +7,13 @@ def electrochem_potential(reactant, product):
 
 # Free energy
 g1_ni4oh3 = -930.63454
-g2_ni4oh3_oh = -940.176367
-g3_ni4oh3_o = -936.79403
-g4_ni4oh2_o_o = -931.779148
-g5_ni4oh3_o2 = -940.239779
-g91_oh = -11.70435016
-g92_h2o = -14.324212
-g93_o2 = -9.93605306
+g2_ni4oh3_oh = -940.287597
+g3_ni4oh3_o = -936.856913
+g4_ni4oh2_o_o = -931.842832
+g5_ni4oh3_o2 = -940.490872
+g91_oh = -11.69119177
+g92_h2o = -14.317398
+g93_o2 = -9.89704748
 
 ev2kjmol = 96.485
 kjmol2v = 1000 / 96485.33289
