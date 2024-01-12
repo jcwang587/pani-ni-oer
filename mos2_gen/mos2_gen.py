@@ -11,4 +11,4 @@ mos2_struct.translate([0, 0, 5.0])
 mos2_struct.pbc = [True, True, True]
 
 # Export to CIF file
-write('mos2_structure.cif', mos2_struct)
+write('mos2_structure_2h.cif', mos2_struct)
